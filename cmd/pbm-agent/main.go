@@ -66,10 +66,10 @@ func main() {
 	)
 
 	cmd, err := pbmCmd.DefaultEnvars().Parse(os.Args[1:])
-	if err != nil && cmd != versionCmd.FullCommand() {
-		stdlog.Println("Error: Parse command line parameters:", err)
-		return
-	}
+//	if err != nil && cmd != versionCmd.FullCommand() {
+//		stdlog.Println("Error: Parse command line parameters:", err)
+//		return
+//	}
 
 	if cmd == versionCmd.FullCommand() {
 		switch {
